@@ -9,6 +9,8 @@ export class AppComponent {
   title: string = 'curso';
   numero: number = 0
 
+  base: number = 5
+
   sumar() { 
     this.numero += 1
   }
