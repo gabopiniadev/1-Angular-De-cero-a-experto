@@ -6,23 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'curso';
-  numero: number = 0
-
-  base: number = 5
-
-  sumar() { 
-    this.numero += 1
-  }
-
-  restar() { 
-    this.numero -= 1
-  }
-
-  //
-  aritmetica(valor: number) { 
-    this.numero += valor
-  }
+  
 
 }
 
