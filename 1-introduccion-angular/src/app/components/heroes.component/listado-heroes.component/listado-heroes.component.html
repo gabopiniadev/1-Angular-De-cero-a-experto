@@ -17,12 +17,18 @@
 </ul>
 
 <h3>Heroes Eliminados</h3>
+<div *ngIf="heroeBorrado; else noBorrado">
+    <ul>
+        <li *ngFor="let eliminate of deleteHeroes">
+            {{eliminate}}
+        </li>
+    </ul>
+</div>
 
-<ul>
-    <li *ngFor="let eliminate of deleteHeroes">
-        {{eliminate}}
-    </li>
-</ul>
+<ng-template #noBorrado>
+    <h2>No ha eliminado ningun Heroe!</h2>
+</ng-template>
+
 
 <button (click)="borrarHeroe()">
     Borrar

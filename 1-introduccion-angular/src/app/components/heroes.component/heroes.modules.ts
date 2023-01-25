@@ -10,6 +10,7 @@ import { ListadoComponent } from './listado-heroes.component/listado-heroes.comp
         ListadoComponent
     ],
     exports: [
+        HeroesComponent,
         ListadoComponent
     ],
     imports: [
